@@ -1,5 +1,6 @@
 # The Final_Project
 ## Credit Card Fraud Analysis Using Machine Learning Tools and Techniques
+![](images/Credit_card_fraud_top.jpg)
 
 # 1. Introduction:
 Credit card fraud is a significant concern for financial institutions and individuals alike. It can result in substantial financial losses and damage to the reputation of both the cardholders and the issuing banks. To address this issue, the application of machine learning techniques has gained significant attention. This project is an extension of Project 3 (Credit Card Fraud Visualization) and aims to develop a credit card fraud analysis system using machine learning tools and techniques to detect and prevent fraudulent transactions effectively.
