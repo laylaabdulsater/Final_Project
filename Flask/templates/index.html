@@ -2,6 +2,16 @@
 <html lang="en">
 
 <head>
+  <title>Light Green Background</title>
+  <style>
+      body {
+          background-color: rgb(96, 100, 111);
+      }
+  </style>
+</head>
+<body>
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fraud Map</title>
@@ -51,6 +61,55 @@
   <script src="static/js/app.js"></script>
 
 
+</body>
+
+
+  <title>Fraud Addresses Map</title>
+  <style>
+      /* Set the map container's height */
+      #map {
+          height: 500px;
+      }
+  </style>
+
+<body>
+  <h1>Fraud Addresses Map</h1>
+  <div id="map"></div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script>
+      // Load the map file and display it on the page
+      $(document).ready(function() {
+          var map_file = "{{ map_file }}";
+          var map = L.map('map').setView([0, 0], 2);
+
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              maxZoom: 19,
+          }).addTo(map);
+
+          L.geoJSON(null, {
+              pointToLayer: function(feature, latlng) {
+                  return L.marker(latlng);
+              },
+              onEachFeature: function(feature, layer) {
+                  if (feature.properties && feature.properties.popupContent) {
+                      layer.bindPopup(feature.properties.popupContent);
+                  }
+              }
+          }).addTo(map);
+
+          $.getJSON(map_file, function(data) {
+              L.geoJSON(data, {
+                  onEachFeature: function(feature, layer) {
+                      if (feature.properties && feature.properties.popupContent) {
+                          layer.bindPopup(feature.properties.popupContent);
+                      }
+                  }
+              }).addTo(map);
+          });
+      });
+  </script>
 </body>
 
 </html>

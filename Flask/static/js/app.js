@@ -319,3 +319,4 @@ function optionChanged(selectedOption) {
     document.getElementById("StackedBarChart").style.display = "none";
   }
 }
+
