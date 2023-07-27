@@ -42,23 +42,5 @@ def api_Fraud_Date():
     output_date_category = df.to_dict(orient="records")
     return jsonify(output_date_category)
 
-@app.route('/api/fraud_address')
-def map():
-    # Create a map centered at the first entry's coordinates
-    map_center = [data.iloc[0]['lat'], data.iloc[0]['long']]
-    fraud_map = folium.Map(location=map_center, zoom_start=6)
-
-    # Add markers for each fraud address
-    for _, row in data.iterrows():
-        popup_text = f"{row['first']} {row['last']}<br>{row['street']}<br>{row['city']}, {row['state']}<br>Population: {row['city_pop']}"
-        folium.Marker(location=[row['lat'], row['long']], popup=popup_text).add_to(fraud_map)
-
-    # Save the map to an HTML file
-    map_file = "fraud_map.html"
-    fraud_map.save(map_file)
-
-    # Render the template with the map file path
-    return render_template('index.html', map_file=map_file)
-
 if __name__ == "__main__":
     app.run()
