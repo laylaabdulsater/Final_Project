@@ -1,0 +1,694 @@
+merchant_id,merchant
+merchant1,fraud_Kilback and Sons
+merchant2,fraud_Kuvalis Ltd
+merchant3,fraud_Herzog Ltd
+merchant4,fraud_Kuphal-Toy
+merchant5,fraud_Bauch-Raynor
+merchant6,"fraud_Bernier, Streich and Jewess"
+merchant7,fraud_Heaney-Marquardt
+merchant8,"fraud_McCullough, Hudson and Schuster"
+merchant9,fraud_Marks Inc
+merchant10,fraud_Bernhard Inc
+merchant11,"fraud_Kohler, Lindgren and Koelpin"
+merchant12,fraud_Heller-Langosh
+merchant13,fraud_Johns Inc
+merchant14,fraud_Towne LLC
+merchant15,"fraud_Willms, Kris and Bergnaum"
+merchant16,fraud_Thiel-Thiel
+merchant17,fraud_Mante Group
+merchant18,fraud_Deckow-O'Conner
+merchant19,fraud_Bruen-Yost
+merchant20,fraud_Jaskolski-Dibbert
+merchant21,fraud_Pacocha-Bauch
+merchant22,fraud_Predovic Inc
+merchant23,fraud_Harber Inc
+merchant24,fraud_Morissette LLC
+merchant25,"fraud_Connelly, Reichert and Fritsch"
+merchant26,fraud_Corwin-Collins
+merchant27,fraud_Roob LLC
+merchant28,fraud_Schmitt Inc
+merchant29,"fraud_Robel, Cummerata and Prosacco"
+merchant30,fraud_Miller-Hauck
+merchant31,fraud_Cummings LLC
+merchant32,fraud_Balistreri-Nader
+merchant33,fraud_Kiehn Inc
+merchant34,"fraud_Jones, Sawayn and Romaguera"
+merchant35,fraud_Ankunding LLC
+merchant36,fraud_Kilback Group
+merchant37,"fraud_Schoen, Kuphal and Nitzsche"
+merchant38,fraud_Sporer Inc
+merchant39,"fraud_Osinski, Ledner and Leuschke"
+merchant40,"fraud_Goldner, Kovacek and Abbott"
+merchant41,fraud_Donnelly LLC
+merchant42,"fraud_Baumbach, Strosin and Nicolas"
+merchant43,fraud_Emard Inc
+merchant44,"fraud_Stroman, Hudson and Erdman"
+merchant45,fraud_Rau and Sons
+merchant46,"fraud_Terry, Johns and Bins"
+merchant47,"fraud_Stokes, Christiansen and Sipes"
+merchant48,fraud_Huels-Hahn
+merchant49,fraud_Funk Group
+merchant50,fraud_Padberg-Rogahn
+merchant51,"fraud_Schaefer, McGlynn and Bosco"
+merchant52,fraud_Morissette PLC
+merchant53,"fraud_Rowe, Batz and Goodwin"
+merchant54,"fraud_Kerluke, Considine and Macejkovic"
+merchant55,fraud_Stamm-Rodriguez
+merchant56,"fraud_Armstrong, Walter and Gottlieb"
+merchant57,fraud_Rodriguez Group
+merchant58,fraud_Conroy-Cruickshank
+merchant59,"fraud_Olson, Becker and Koch"
+merchant60,fraud_Luettgen PLC
+merchant61,fraud_Kutch-Hegmann
+merchant62,fraud_Thiel PLC
+merchant63,"fraud_Swaniawski, Bahringer and Ledner"
+merchant64,fraud_Bogisich-Homenick
+merchant65,fraud_Bartoletti-Wunsch
+merchant66,"fraud_Mosciski, Ziemann and Farrell"
+merchant67,fraud_Hudson-Ratke
+merchant68,fraud_Kling Inc
+merchant69,fraud_Wilkinson Ltd
+merchant70,"fraud_Reilly, Heaney and Cole"
+merchant71,"fraud_Johnson, Runolfsdottir and Mayer"
+merchant72,fraud_Smith-Stokes
+merchant73,fraud_Kassulke PLC
+merchant74,fraud_Welch Inc
+merchant75,"fraud_Langosh, Wintheiser and Hyatt"
+merchant76,fraud_Stiedemann Inc
+merchant77,fraud_O'Keefe-Hudson
+merchant78,"fraud_Bins, Balistreri and Beatty"
+merchant79,fraud_Ledner-Pfannerstill
+merchant80,fraud_Rempel PLC
+merchant81,fraud_Schmidt and Sons
+merchant82,"fraud_Raynor, Feest and Miller"
+merchant83,"fraud_Parisian, Schiller and Altenwerth"
+merchant84,fraud_Wisozk and Sons
+merchant85,fraud_Cummerata-Jones
+merchant86,fraud_Heller-Abshire
+merchant87,"fraud_Kutch, Hermiston and Farrell"
+merchant88,fraud_Friesen-D'Amore
+merchant89,fraud_Dach-Nader
+merchant90,fraud_Koepp-Parker
+merchant91,fraud_Doyle Ltd
+merchant92,fraud_Huels-Nolan
+merchant93,fraud_Huel Ltd
+merchant94,fraud_McDermott-Rice
+merchant95,"fraud_Harris, Gusikowski and Heaney"
+merchant96,fraud_Lebsack and Sons
+merchant97,fraud_Turner and Sons
+merchant98,fraud_Lockman Ltd
+merchant99,"fraud_Herman, Treutel and Dickens"
+merchant100,fraud_Erdman-Kertzmann
+merchant101,fraud_Williamson LLC
+merchant102,fraud_Douglas-White
+merchant103,fraud_Hermann and Sons
+merchant104,"fraud_Jenkins, Hauck and Friesen"
+merchant105,fraud_Block Group
+merchant106,fraud_Koss and Sons
+merchant107,fraud_Corwin-Gorczany
+merchant108,fraud_Flatley-Durgan
+merchant109,fraud_Hickle Group
+merchant110,fraud_Harris Inc
+merchant111,fraud_Bins-Rice
+merchant112,fraud_Smitham-Schiller
+merchant113,"fraud_Heathcote, Yost and Kertzmann"
+merchant114,fraud_Murray Ltd
+merchant115,fraud_Wuckert-Walter
+merchant116,"fraud_Schultz, Simonis and Little"
+merchant117,fraud_Rutherford-Mertz
+merchant118,fraud_Strosin-Cruickshank
+merchant119,fraud_Macejkovic-Lesch
+merchant120,fraud_Skiles-Ankunding
+merchant121,fraud_Gibson-Deckow
+merchant122,fraud_Kunze Inc
+merchant123,fraud_Howe PLC
+merchant124,"fraud_Towne, Greenholt and Koepp"
+merchant125,fraud_Parisian and Sons
+merchant126,fraud_Reichel Inc
+merchant127,"fraud_Lind, Huel and McClure"
+merchant128,fraud_Cartwright-Harris
+merchant129,fraud_Gleason-Macejkovic
+merchant130,"fraud_Hayes, Marquardt and Dibbert"
+merchant131,fraud_Wolf Inc
+merchant132,"fraud_Zieme, Bode and Dooley"
+merchant133,fraud_Rowe-Vandervort
+merchant134,fraud_Simonis-Prohaska
+merchant135,fraud_Nader-Heller
+merchant136,"fraud_Towne, Walker and Borer"
+merchant137,"fraud_Kovacek, Dibbert and Ondricka"
+merchant138,fraud_Goyette Inc
+merchant139,fraud_Kuhic Inc
+merchant140,fraud_Volkman Ltd
+merchant141,fraud_Padberg-Welch
+merchant142,"fraud_Eichmann, Bogan and Rodriguez"
+merchant143,fraud_Friesen-Stamm
+merchant144,"fraud_Raynor, Reinger and Hagenes"
+merchant145,fraud_Hintz-Bruen
+merchant146,fraud_Maggio-Fahey
+merchant147,fraud_Boyer-Reichert
+merchant148,fraud_O'Keefe-Wisoky
+merchant149,fraud_Runolfsson and Sons
+merchant150,"fraud_Heller, Gutmann and Zieme"
+merchant151,fraud_Murray-Smitham
+merchant152,"fraud_Schumm, Bauch and Ondricka"
+merchant153,"fraud_Haley, Jewess and Bechtelar"
+merchant154,fraud_Kunde-Sanford
+merchant155,"fraud_Lehner, Mosciski and King"
+merchant156,"fraud_Greenfelder, Bartoletti and Davis"
+merchant157,fraud_Mraz-Herzog
+merchant158,fraud_Dickinson Ltd
+merchant159,"fraud_Parker, Nolan and Trantow"
+merchant160,fraud_Bailey-Morar
+merchant161,fraud_Zemlak Group
+merchant162,fraud_Emmerich-Luettgen
+merchant163,fraud_Kiehn-Emmerich
+merchant164,"fraud_Douglas, Schneider and Turner"
+merchant165,"fraud_Reichert, Huels and Hoppe"
+merchant166,"fraud_Mosciski, Gislason and Mertz"
+merchant167,fraud_DuBuque LLC
+merchant168,"fraud_Nienow, Ankunding and Collier"
+merchant169,"fraud_Adams, Kovacek and Kuhlman"
+merchant170,fraud_Kris-Padberg
+merchant171,"fraud_Streich, Hansen and Veum"
+merchant172,fraud_Price Inc
+merchant173,fraud_Brekke and Sons
+merchant174,fraud_Beier LLC
+merchant175,fraud_Bradtke PLC
+merchant176,fraud_Wiza LLC
+merchant177,fraud_Ruecker Group
+merchant178,fraud_Heidenreich PLC
+merchant179,fraud_McGlynn-Jaskolski
+merchant180,fraud_Kuhn LLC
+merchant181,fraud_VonRueden Group
+merchant182,"fraud_Cremin, Hamill and Reichel"
+merchant183,fraud_Miller-Harris
+merchant184,fraud_Vandervort-Funk
+merchant185,fraud_Pfeffer and Sons
+merchant186,fraud_Barrows PLC
+merchant187,"fraud_Moen, Reinger and Murphy"
+merchant188,fraud_Fisher Inc
+merchant189,fraud_Mayert Group
+merchant190,fraud_Hackett-Lueilwitz
+merchant191,fraud_McDermott-Weimann
+merchant192,fraud_Conroy Ltd
+merchant193,"fraud_Greenholt, Jacobi and Gleason"
+merchant194,fraud_Kemmer-Reinger
+merchant195,"fraud_Huel, Hammes and Witting"
+merchant196,"fraud_Greenholt, O'Hara and Balistreri"
+merchant197,"fraud_Hermiston, Russel and Price"
+merchant198,fraud_Kemmer-Buckridge
+merchant199,fraud_Hamill-Daugherty
+merchant200,fraud_Cummerata-Hilpert
+merchant201,fraud_McCullough Group
+merchant202,fraud_Mohr-Bayer
+merchant203,fraud_Goodwin-Nitzsche
+merchant204,fraud_Schulist Ltd
+merchant205,fraud_Flatley Group
+merchant206,fraud_Kutch Group
+merchant207,fraud_Dicki Ltd
+merchant208,fraud_Schuppe LLC
+merchant209,fraud_Wiegand-Lowe
+merchant210,"fraud_Christiansen, Goyette and Schamberger"
+merchant211,fraud_Jaskolski-Vandervort
+merchant212,fraud_Torphy-Goyette
+merchant213,fraud_O'Hara-Wilderman
+merchant214,"fraud_Lockman, West and Runte"
+merchant215,"fraud_Lehner, Reichert and Mills"
+merchant216,fraud_Reynolds-Schinner
+merchant217,"fraud_Johnston, Nikolaus and Maggio"
+merchant218,fraud_Dickinson-Rempel
+merchant219,fraud_Barton Inc
+merchant220,fraud_Reilly LLC
+merchant221,"fraud_Labadie, Treutel and Bode"
+merchant222,"fraud_Monahan, Bogisich and Ledner"
+merchant223,fraud_Huel-Langworth
+merchant224,"fraud_Streich, Dietrich and Barton"
+merchant225,fraud_Johns-Hoeger
+merchant226,fraud_Schmeler Inc
+merchant227,fraud_Torp-Labadie
+merchant228,"fraud_Ferry, Lynch and Kautzer"
+merchant229,fraud_McCullough LLC
+merchant230,fraud_Auer-Mosciski
+merchant231,"fraud_Romaguera, Cruickshank and Greenholt"
+merchant232,"fraud_Nicolas, Hills and McGlynn"
+merchant233,fraud_Buckridge PLC
+merchant234,fraud_Keeling-Crist
+merchant235,"fraud_Wintheiser, Dietrich and Schimmel"
+merchant236,fraud_McGlynn-Heathcote
+merchant237,fraud_Cole PLC
+merchant238,"fraud_Bernhard, Grant and Langworth"
+merchant239,fraud_Morar Inc
+merchant240,"fraud_Yost, Block and Koepp"
+merchant241,fraud_Kuphal-Bartoletti
+merchant242,"fraud_Schaefer, Maggio and Daugherty"
+merchant243,fraud_Denesik and Sons
+merchant244,fraud_Spinka-Welch
+merchant245,fraud_Leannon-Ward
+merchant246,fraud_Kuhic LLC
+merchant247,fraud_Halvorson Group
+merchant248,fraud_Gerlach Inc
+merchant249,"fraud_Effertz, Welch and Schowalter"
+merchant250,fraud_Kihn Inc
+merchant251,"fraud_Quitzon, Green and Bashirian"
+merchant252,fraud_Durgan-Auer
+merchant253,fraud_Pouros-Haag
+merchant254,fraud_Gutmann Ltd
+merchant255,"fraud_Tromp, Kerluke and Glover"
+merchant256,"fraud_Morissette, Weber and Wiegand"
+merchant257,fraud_Jacobi and Sons
+merchant258,fraud_Donnelly PLC
+merchant259,fraud_Kozey-Boehm
+merchant260,fraud_Stamm-Witting
+merchant261,fraud_Dach-Borer
+merchant262,fraud_Pagac LLC
+merchant263,fraud_Kutch LLC
+merchant264,"fraud_Tillman, Fritsch and Schmitt"
+merchant265,"fraud_Tillman, Dickinson and Labadie"
+merchant266,fraud_Goldner-Lemke
+merchant267,fraud_Kutch and Sons
+merchant268,fraud_Jast Ltd
+merchant269,fraud_Pouros-Conroy
+merchant270,fraud_Berge LLC
+merchant271,"fraud_Kihn, Abernathy and Douglas"
+merchant272,fraud_Stracke-Lemke
+merchant273,"fraud_Rodriguez, Yost and Jenkins"
+merchant274,"fraud_Rippin, Kub and Mann"
+merchant275,"fraud_Casper, Hand and Zulauf"
+merchant276,fraud_Pacocha-O'Reilly
+merchant277,"fraud_Goyette, Howell and Collier"
+merchant278,fraud_Klein Group
+merchant279,fraud_Gislason Group
+merchant280,fraud_Medhurst PLC
+merchant281,fraud_Spencer-Runolfsson
+merchant282,fraud_Rempel Inc
+merchant283,"fraud_Bernier, Volkman and Hoeger"
+merchant284,"fraud_Langworth, Boehm and Gulgowski"
+merchant285,fraud_Cruickshank-Mills
+merchant286,fraud_Koepp-Witting
+merchant287,"fraud_Kerluke, Kertzmann and Wiza"
+merchant288,fraud_Hermann-Gaylord
+merchant289,fraud_Pfeffer LLC
+merchant290,"fraud_Baumbach, Feeney and Morar"
+merchant291,"fraud_Fadel, Mertz and Rippin"
+merchant292,fraud_Dibbert and Sons
+merchant293,fraud_Sawayn PLC
+merchant294,fraud_Bogisich Inc
+merchant295,fraud_Schmitt Ltd
+merchant296,fraud_Schamberger-O'Keefe
+merchant297,"fraud_Wiza, Schaden and Stark"
+merchant298,fraud_Dooley-Thompson
+merchant299,fraud_Kling-Grant
+merchant300,fraud_Beier-Hyatt
+merchant301,fraud_Howe Ltd
+merchant302,fraud_Fisher-Schowalter
+merchant303,fraud_Bednar Group
+merchant304,"fraud_Reichert, Shanahan and Hayes"
+merchant305,"fraud_Bahringer, Schoen and Corkery"
+merchant306,"fraud_Koss, McLaughlin and Mayer"
+merchant307,"fraud_Turcotte, McKenzie and Koss"
+merchant308,"fraud_Schmeler, Bashirian and Price"
+merchant309,"fraud_Roob, Conn and Tremblay"
+merchant310,fraud_Grimes LLC
+merchant311,fraud_Kerluke PLC
+merchant312,fraud_Mohr Inc
+merchant313,fraud_Brown PLC
+merchant314,fraud_Volkman-Predovic
+merchant315,fraud_Boyer PLC
+merchant316,fraud_Turcotte-Halvorson
+merchant317,fraud_Hudson-Grady
+merchant318,fraud_Kassulke Inc
+merchant319,fraud_Ortiz Group
+merchant320,"fraud_Okuneva, Schneider and Rau"
+merchant321,fraud_Eichmann-Russel
+merchant322,"fraud_Ferry, Reichel and DuBuque"
+merchant323,"fraud_Kutch, Steuber and Gerhold"
+merchant324,"fraud_Swaniawski, Lowe and Robel"
+merchant325,"fraud_Little, Gutmann and Lynch"
+merchant326,fraud_Stoltenberg-Beatty
+merchant327,"fraud_Nitzsche, Kessler and Wolff"
+merchant328,fraud_Auer-West
+merchant329,fraud_Kilback LLC
+merchant330,"fraud_Daugherty, Pouros and Beahan"
+merchant331,fraud_Smitham-Boehm
+merchant332,fraud_Roberts-Beahan
+merchant333,"fraud_Rutherford, Homenick and Bergstrom"
+merchant334,fraud_Cummings Group
+merchant335,fraud_Lesch Ltd
+merchant336,fraud_Stark-Batz
+merchant337,fraud_Koelpin and Sons
+merchant338,fraud_Metz-Boehm
+merchant339,fraud_Block-Parisian
+merchant340,"fraud_Welch, Rath and Koepp"
+merchant341,fraud_Effertz LLC
+merchant342,"fraud_Altenwerth, Cartwright and Koss"
+merchant343,fraud_Bauch-Blanda
+merchant344,"fraud_Turner, Ruecker and Parisian"
+merchant345,fraud_Schumm PLC
+merchant346,"fraud_Baumbach, Hodkiewicz and Walsh"
+merchant347,fraud_Heathcote LLC
+merchant348,"fraud_Reichert, Rowe and Mraz"
+merchant349,fraud_Prohaska-Murray
+merchant350,fraud_Cormier LLC
+merchant351,fraud_Stiedemann Ltd
+merchant352,fraud_Botsford Ltd
+merchant353,"fraud_Feil, Hilpert and Koss"
+merchant354,fraud_Hills-Olson
+merchant355,fraud_Frami Group
+merchant356,"fraud_Hagenes, Kohler and Hoppe"
+merchant357,"fraud_Schuppe, Nolan and Hoeger"
+merchant358,"fraud_Stehr, Jewess and Schimmel"
+merchant359,"fraud_Zboncak, Rowe and Murazik"
+merchant360,fraud_Jast-McDermott
+merchant361,fraud_Hills-Witting
+merchant362,"fraud_Rohan, White and Aufderhar"
+merchant363,fraud_Torp-Lemke
+merchant364,fraud_Jewess LLC
+merchant365,"fraud_Runolfsdottir, Mueller and Hand"
+merchant366,fraud_Collier Inc
+merchant367,fraud_Zboncak LLC
+merchant368,"fraud_Boehm, Predovic and Reinger"
+merchant369,"fraud_Moore, Dibbert and Koepp"
+merchant370,fraud_Spinka Inc
+merchant371,fraud_Friesen Inc
+merchant372,fraud_Kuphal-Predovic
+merchant373,"fraud_Swift, Bradtke and Marquardt"
+merchant374,fraud_Herman Inc
+merchant375,fraud_Bahringer-Larson
+merchant376,fraud_Dooley Inc
+merchant377,"fraud_Watsica, Haag and Considine"
+merchant378,fraud_Paucek-Wiza
+merchant379,fraud_Upton PLC
+merchant380,fraud_Kerluke-Abshire
+merchant381,fraud_Haley Group
+merchant382,"fraud_Stanton, Jakubowski and Baumbach"
+merchant383,fraud_Gutmann-Upton
+merchant384,fraud_Kerluke Inc
+merchant385,fraud_Lemke-Gutmann
+merchant386,"fraud_Cormier, Stracke and Thiel"
+merchant387,"fraud_Konopelski, Schneider and Hartmann"
+merchant388,fraud_Lind-Buckridge
+merchant389,fraud_Cassin-Harvey
+merchant390,"fraud_Hoppe, Harris and Bednar"
+merchant391,"fraud_Ruecker, Beer and Collier"
+merchant392,fraud_Christiansen-Gusikowski
+merchant393,fraud_Conroy-Emard
+merchant394,"fraud_Dare, Casper and Bartoletti"
+merchant395,fraud_Cartwright PLC
+merchant396,"fraud_Yost, Schamberger and Windler"
+merchant397,fraud_Streich Ltd
+merchant398,fraud_Beer-Jast
+merchant399,"fraud_Kihn, Brakus and Goyette"
+merchant400,fraud_Weimann-Lockman
+merchant401,"fraud_Hauck, Dietrich and Funk"
+merchant402,fraud_Connelly PLC
+merchant403,"fraud_Swaniawski, Nitzsche and Welch"
+merchant404,fraud_Feil-Morar
+merchant405,"fraud_Schroeder, Wolff and Hermiston"
+merchant406,fraud_Gleason and Sons
+merchant407,fraud_Ratke and Sons
+merchant408,fraud_Morissette-Schaefer
+merchant409,fraud_Champlin-Casper
+merchant410,fraud_Nolan-Williamson
+merchant411,fraud_Lubowitz-Walter
+merchant412,fraud_Jakubowski Inc
+merchant413,"fraud_Romaguera, Wehner and Tromp"
+merchant414,fraud_Bechtelar-Rippin
+merchant415,fraud_Yost-Rogahn
+merchant416,fraud_Wilkinson PLC
+merchant417,fraud_Bernier and Sons
+merchant418,"fraud_Schroeder, Hauck and Treutel"
+merchant419,"fraud_Ritchie, Oberbrunner and Cremin"
+merchant420,fraud_Baumbach Ltd
+merchant421,"fraud_Kling, Howe and Schneider"
+merchant422,fraud_Schmeler-Howe
+merchant423,"fraud_Denesik, Powlowski and Pouros"
+merchant424,fraud_Kub PLC
+merchant425,fraud_Ebert-Daugherty
+merchant426,fraud_Marvin-Lind
+merchant427,fraud_Jast and Sons
+merchant428,fraud_Hoppe-Parisian
+merchant429,fraud_Wuckert-Goldner
+merchant430,fraud_Hammes-Beatty
+merchant431,"fraud_Walter, Hettinger and Kessler"
+merchant432,"fraud_Lubowitz, Terry and Stracke"
+merchant433,"fraud_Becker, Harris and Harvey"
+merchant434,fraud_Rippin-VonRueden
+merchant435,fraud_Swift PLC
+merchant436,fraud_Kovacek Ltd
+merchant437,fraud_Shields-Wunsch
+merchant438,"fraud_Gutmann, McLaughlin and Wiza"
+merchant439,"fraud_Cole, Hills and Jewess"
+merchant440,fraud_Romaguera and Sons
+merchant441,fraud_Osinski Inc
+merchant442,fraud_Gulgowski LLC
+merchant443,fraud_Skiles LLC
+merchant444,fraud_Brown Inc
+merchant445,fraud_Barton LLC
+merchant446,fraud_Schoen-Quigley
+merchant447,fraud_Langworth LLC
+merchant448,fraud_Quitzon-Goyette
+merchant449,fraud_Romaguera Ltd
+merchant450,fraud_Powlowski-Weimann
+merchant451,fraud_Hirthe-Beier
+merchant452,"fraud_Lang, Towne and Schuppe"
+merchant453,fraud_O'Connell-Ullrich
+merchant454,fraud_Breitenberg-Hermiston
+merchant455,fraud_Hills-Boyer
+merchant456,"fraud_Bahringer, Bergnaum and Quitzon"
+merchant457,fraud_Mosciski Group
+merchant458,"fraud_Lowe, Dietrich and Erdman"
+merchant459,fraud_Gaylord-Powlowski
+merchant460,fraud_Champlin and Sons
+merchant461,fraud_Bahringer-Streich
+merchant462,fraud_Harris Group
+merchant463,fraud_Kling-Ernser
+merchant464,fraud_Fahey Inc
+merchant465,"fraud_Prosacco, Kreiger and Kovacek"
+merchant466,fraud_Weber and Sons
+merchant467,"fraud_Schumm, McLaughlin and Carter"
+merchant468,fraud_Carroll PLC
+merchant469,fraud_Gerhold LLC
+merchant470,fraud_Watsica LLC
+merchant471,"fraud_Medhurst, Cartwright and Ebert"
+merchant472,fraud_Stark-Koss
+merchant473,fraud_Abernathy and Sons
+merchant474,fraud_Homenick LLC
+merchant475,fraud_Ziemann-Waters
+merchant476,"fraud_Koss, Hansen and Lueilwitz"
+merchant477,fraud_Leannon-Nikolaus
+merchant478,fraud_Lynch-Wisozk
+merchant479,fraud_Ernser-Feest
+merchant480,fraud_Eichmann-Kilback
+merchant481,fraud_Bins-Tillman
+merchant482,fraud_Lemke and Sons
+merchant483,fraud_Ankunding-Carroll
+merchant484,"fraud_Larson, Quitzon and Spencer"
+merchant485,fraud_Kihn-Schuster
+merchant486,fraud_Gottlieb-Hansen
+merchant487,fraud_Reilly and Sons
+merchant488,fraud_Abbott-Steuber
+merchant489,fraud_Daugherty-Thompson
+merchant490,fraud_Dare-Gibson
+merchant491,"fraud_Crist, Jakubowski and Littel"
+merchant492,fraud_Bode-Rempel
+merchant493,fraud_Friesen-Ortiz
+merchant494,fraud_Padberg-Sauer
+merchant495,fraud_Waelchi-Wolf
+merchant496,"fraud_Berge, Kautzer and Harris"
+merchant497,fraud_Auer LLC
+merchant498,"fraud_Wuckert, Wintheiser and Friesen"
+merchant499,"fraud_Kuhic, Bins and Pfeffer"
+merchant500,fraud_Windler LLC
+merchant501,fraud_Jakubowski Group
+merchant502,fraud_Berge-Hills
+merchant503,fraud_Connelly-Carter
+merchant504,fraud_Lynch-Mohr
+merchant505,"fraud_Weber, Thiel and Hammes"
+merchant506,fraud_Bartoletti and Sons
+merchant507,fraud_Jerde-Hermann
+merchant508,"fraud_Witting, Beer and Ernser"
+merchant509,fraud_McKenzie-Huels
+merchant510,fraud_Schimmel-Olson
+merchant511,"fraud_O'Connell, Botsford and Hand"
+merchant512,fraud_Crooks and Sons
+merchant513,fraud_Reichert-Weissnat
+merchant514,fraud_Wilkinson LLC
+merchant515,fraud_Dibbert-Green
+merchant516,"fraud_Mueller, Gerhold and Mueller"
+merchant517,fraud_Will Ltd
+merchant518,fraud_Botsford PLC
+merchant519,fraud_Kirlin and Sons
+merchant520,fraud_Hilpert-Conroy
+merchant521,"fraud_Weimann, Kuhic and Beahan"
+merchant522,fraud_Zulauf LLC
+merchant523,fraud_Kautzer and Sons
+merchant524,fraud_Abshire PLC
+merchant525,fraud_Waters-Cruickshank
+merchant526,fraud_Schiller Ltd
+merchant527,"fraud_Lesch, D'Amore and Brown"
+merchant528,fraud_Kuhn Group
+merchant529,"fraud_Schoen, Nienow and Bauch"
+merchant530,"fraud_Hermiston, Pacocha and Smith"
+merchant531,fraud_Emmerich-Rau
+merchant532,"fraud_Hettinger, McCullough and Fay"
+merchant533,fraud_Schroeder Group
+merchant534,"fraud_Zemlak, Tillman and Cremin"
+merchant535,fraud_Gottlieb Group
+merchant536,fraud_Berge-Ullrich
+merchant537,"fraud_O'Reilly, Mohr and Purdy"
+merchant538,fraud_Thompson-Gleason
+merchant539,fraud_Nienow PLC
+merchant540,fraud_Deckow-Dare
+merchant541,fraud_Larkin Ltd
+merchant542,"fraud_Roberts, Ryan and Smith"
+merchant543,"fraud_Douglas, DuBuque and McKenzie"
+merchant544,fraud_Leffler-Goldner
+merchant545,fraud_Kutch-Ferry
+merchant546,fraud_Daugherty LLC
+merchant547,fraud_Treutel-King
+merchant548,"fraud_Torp, Muller and Borer"
+merchant549,fraud_Bins-Howell
+merchant550,fraud_Bahringer Group
+merchant551,fraud_Fritsch LLC
+merchant552,fraud_Adams-Barrows
+merchant553,fraud_Waelchi Inc
+merchant554,"fraud_Metz, Russel and Metz"
+merchant555,"fraud_Hintz, Bauch and Smith"
+merchant556,fraud_Schmidt-Larkin
+merchant557,fraud_Botsford and Sons
+merchant558,fraud_Beier and Sons
+merchant559,"fraud_Turcotte, Batz and Buckridge"
+merchant560,fraud_Parker-Kunde
+merchant561,fraud_Ernser-Lynch
+merchant562,fraud_Erdman-Schaden
+merchant563,fraud_Medhurst Inc
+merchant564,fraud_Pacocha-Weissnat
+merchant565,"fraud_Cronin, Kshlerin and Weber"
+merchant566,fraud_Bernhard-Lesch
+merchant567,fraud_Friesen Ltd
+merchant568,"fraud_Pouros, Walker and Spencer"
+merchant569,"fraud_Hyatt, Russel and Gleichner"
+merchant570,"fraud_Roberts, Daniel and Macejkovic"
+merchant571,"fraud_Mante, Luettgen and Hackett"
+merchant572,"fraud_Graham, Hegmann and Hammes"
+merchant573,"fraud_Larkin, Stracke and Greenfelder"
+merchant574,fraud_Terry-Huel
+merchant575,fraud_Reichel LLC
+merchant576,fraud_Torphy-Kertzmann
+merchant577,fraud_Kris-Kertzmann
+merchant578,fraud_Nader-Maggio
+merchant579,"fraud_Kilback, Nitzsche and Leffler"
+merchant580,fraud_Rolfson-Kunde
+merchant581,fraud_Satterfield-Lowe
+merchant582,"fraud_Hagenes, Hermann and Stroman"
+merchant583,fraud_Ullrich Ltd
+merchant584,fraud_Tromp Group
+merchant585,fraud_White and Sons
+merchant586,fraud_Bode-Schuster
+merchant587,fraud_Ruecker-Mayert
+merchant588,fraud_Pollich LLC
+merchant589,fraud_Rau-Robel
+merchant590,"fraud_McDermott, Osinski and Morar"
+merchant591,fraud_Kulas Group
+merchant592,fraud_Collier LLC
+merchant593,"fraud_Hartmann, Rowe and Hermann"
+merchant594,fraud_Schoen Ltd
+merchant595,fraud_Shanahan-Lehner
+merchant596,fraud_Lynch Ltd
+merchant597,fraud_Goyette-Gerhold
+merchant598,"fraud_Streich, Rolfson and Wilderman"
+merchant599,"fraud_Dare, Fritsch and Zboncak"
+merchant600,"fraud_Turner, Ziemann and Lehner"
+merchant601,fraud_Renner Ltd
+merchant602,"fraud_Windler, Goodwin and Kovacek"
+merchant603,"fraud_Nienow, Barrows and Romaguera"
+merchant604,fraud_Kub-Heaney
+merchant605,fraud_Kertzmann LLC
+merchant606,"fraud_Medhurst, Labadie and Gottlieb"
+merchant607,fraud_Labadie LLC
+merchant608,fraud_Bogisich-Weimann
+merchant609,fraud_Crona and Sons
+merchant610,"fraud_Conroy, Balistreri and Gorczany"
+merchant611,"fraud_Hahn, Douglas and Schowalter"
+merchant612,fraud_Volkman PLC
+merchant613,fraud_Kozey-Kuhlman
+merchant614,fraud_Bashirian Group
+merchant615,"fraud_Ledner, Hartmann and Feest"
+merchant616,fraud_Altenwerth-Kilback
+merchant617,"fraud_Schiller, Blanda and Johnson"
+merchant618,"fraud_Runte, Green and Emard"
+merchant619,fraud_Schaefer Ltd
+merchant620,"fraud_Eichmann, Hayes and Treutel"
+merchant621,"fraud_Hodkiewicz, Prohaska and Paucek"
+merchant622,fraud_Larson-Moen
+merchant623,fraud_Little-Gleichner
+merchant624,fraud_Fadel Inc
+merchant625,"fraud_Hahn, Bahringer and McLaughlin"
+merchant626,fraud_Haag-Blanda
+merchant627,fraud_Brown-Greenholt
+merchant628,"fraud_Moore, Williamson and Emmerich"
+merchant629,"fraud_Monahan, Hermann and Johns"
+merchant630,fraud_Thiel Ltd
+merchant631,fraud_Terry Ltd
+merchant632,fraud_Prosacco LLC
+merchant633,fraud_Greenholt Ltd
+merchant634,fraud_Zboncak Ltd
+merchant635,fraud_Kessler Inc
+merchant636,fraud_Breitenberg LLC
+merchant637,fraud_Hackett Group
+merchant638,"fraud_Gottlieb, Considine and Schultz"
+merchant639,"fraud_Hills, Hegmann and Schaefer"
+merchant640,fraud_Fritsch and Sons
+merchant641,fraud_Dare-Marvin
+merchant642,"fraud_Haley, Batz and Auer"
+merchant643,"fraud_Kunze, Larkin and Mayert"
+merchant644,fraud_Monahan-Morar
+merchant645,fraud_Sporer-Keebler
+merchant646,fraud_Little Ltd
+merchant647,fraud_Hamill-D'Amore
+merchant648,"fraud_Bahringer, Osinski and Block"
+merchant649,"fraud_Brown, Homenick and Lesch"
+merchant650,"fraud_Champlin, Rolfson and Connelly"
+merchant651,fraud_Roob-Okuneva
+merchant652,fraud_Erdman-Durgan
+merchant653,fraud_Heller PLC
+merchant654,fraud_Schuppe-Schuppe
+merchant655,fraud_Fadel-Hilpert
+merchant656,fraud_Kutch-Wilderman
+merchant657,fraud_Erdman-Ebert
+merchant658,fraud_Bednar PLC
+merchant659,"fraud_Schaefer, Fay and Hilll"
+merchant660,fraud_Spencer PLC
+merchant661,fraud_Rau-Grant
+merchant662,fraud_Runte-Mohr
+merchant663,"fraud_Lakin, Ferry and Beatty"
+merchant664,fraud_Bednar Inc
+merchant665,fraud_Johnston-Casper
+merchant666,fraud_Turner LLC
+merchant667,fraud_Graham and Sons
+merchant668,fraud_Block-Hauck
+merchant669,fraud_Klocko LLC
+merchant670,"fraud_Reinger, Weissnat and Strosin"
+merchant671,fraud_Kessler Group
+merchant672,"fraud_Bradtke, Torp and Bahringer"
+merchant673,"fraud_Durgan, Gislason and Spencer"
+merchant674,fraud_Goyette-Herzog
+merchant675,fraud_Kihn-Fritsch
+merchant676,"fraud_Schneider, Hayes and Nikolaus"
+merchant677,"fraud_Klocko, Runolfsdottir and Breitenberg"
+merchant678,fraud_Dietrich-Fadel
+merchant679,fraud_Tillman LLC
+merchant680,fraud_Abbott-Rogahn
+merchant681,fraud_Kris-Weimann
+merchant682,fraud_Kozey-McDermott
+merchant683,"fraud_Boehm, Block and Jakubowski"
+merchant684,fraud_Jacobi Inc
+merchant685,"fraud_Ritchie, Bradtke and Stiedemann"
+merchant686,fraud_Veum-Koelpin
+merchant687,fraud_Trantow PLC
+merchant688,fraud_Shields Inc
+merchant689,"fraud_Reichel, Bradtke and Blanda"
+merchant690,fraud_Hyatt-Blick
+merchant691,"fraud_McLaughlin, Armstrong and Koepp"
+merchant692,fraud_Boyer-Haley
+merchant693,fraud_Corwin-Romaguera
