@@ -180,81 +180,48 @@ function displayStackedBarChart() {
     // Extract unique categories
     let categories = Array.from(new Set(data.map(d => d.category)));
 
-    // Create D3 stack generator
-    let stack = d3.stack()
-      .keys(categories)
-      .value((d, key) => d[key] || 0);
+    // Format the data in a compatible format for Plot.js
+    let stocks = categories.map(category => {
+      return {
+        Symbol: category,
+        ...data.map(d => {
+          if (d.category === category) {
+            return {
+              Date: d.fraud_date,
+              Close: d.amount
+            };
+          } else {
+            return {
+              Date: d.fraud_date,
+              Close: 0 // Fill non-matching categories with 0
+            };
+          }
+        })
+      };
+    });
 
-    // Select the chart container element
-    let chartContainer = d3.select("#timelineChartContainer");
-
-    // Clear the existing chart
-    chartContainer.html("");
-
-    // Append the chart to the chart container
-    let svg = chartContainer.append("svg")
-      .attr("width", 800)
-      .attr("height", 400)
-      .append("g")
-      .attr("transform", "translate(50, 50)");
-
-    // Create x and y scales
-    let xScale = d3.scaleTime()
-      .domain(d3.extent(data, d => d.fraud_date))
-      .range([0, 700]);
-
-    let yScale = d3.scaleLinear()
-      .domain([0, d3.max(data, d => d3.sum(categories, key => d[key]))])
-      .range([300, 0]);
-
-    // Add x-axis
-    svg.append("g")
-      .attr("transform", "translate(0, 300)")
-      .call(d3.axisBottom(xScale));
-
-    // Add y-axis
-    svg.append("g")
-      .call(d3.axisLeft(yScale));
-
-    // Create a stack group for the bars
-    let stackGroup = svg.append("g");
-
-    // Generate the stacked bars
-    stackGroup.selectAll(".stack")
-      .data(stack(data))
-      .enter().append("g")
-      .attr("class", "stack")
-      .attr("fill", d => colorScale(d.key))
-      .selectAll("rect")
-      .data(d => d)
-      .enter().append("rect")
-      .attr("x", d => xScale(d.data.fraud_date))
-      .attr("y", d => yScale(d[1]))
-      .attr("height", d => yScale(d[0]) - yScale(d[1]))
-      .attr("width", 10);
-
-    // Add legend
-    let legend = svg.selectAll(".legend")
-      .data(categories)
-      .enter()
-      .append("g")
-      .attr("class", "legend")
-      .attr("transform", (d, i) => `translate(0,${i * 20})`);
-
-    legend.append("rect")
-      .attr("x", 700)
-      .attr("y", -10)
-      .attr("width", 10)
-      .attr("height", 10)
-      .attr("fill", colorScale);
-
-    // legend.append("text")
-    //   .attr("x", 715)
-    //   .attr("y", 0)
-    //   .attr("dy", "0.35em")
-    //   .text (d => d);
-    }).catch(error => console.log("Error loading the Time Series Line Chart:", error));
-  }
+    // Create the labeled multi-line chart
+    Plot.plot({
+      style: "overflow: visible;",
+      y: { grid: true },
+      marks: [
+        Plot.ruleY([0]),
+        Plot.lineY(stocks, { x: "fraud_date", y: "amount", stroke: "category" }),
+        Plot.text(
+          stocks,
+          Plot.selectLast({
+            x: "fraud_date",
+            y: "amount",
+            z: "category",
+            text: "category",
+            textAnchor: "start",
+            dx: 3
+          })
+        )
+      ]
+    });
+  }).catch(error => console.log("Error loading the Labeled Multi-line Chart:", error));
+}
 
 
 let timerInterval;
@@ -319,4 +286,3 @@ function optionChanged(selectedOption) {
     document.getElementById("StackedBarChart").style.display = "none";
   }
 }
-
