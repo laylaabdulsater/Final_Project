@@ -1,0 +1,15 @@
+category_id,category
+cat1,entertainment
+cat2,gas_transport
+cat3,misc_pos
+cat4,food_dining
+cat5,grocery_pos
+cat6,grocery_net
+cat7,shopping_pos
+cat8,misc_net
+cat9,shopping_net
+cat10,home
+cat11,kids_pets
+cat12,personal_care
+cat13,health_fitness
+cat14,travel

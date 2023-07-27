@@ -1,0 +1,479 @@
+job_id,job
+job1,"Therapist, occupational"
+job2,Forensic psychologist
+job3,"Development worker, community"
+job4,Product designer
+job5,"Nurse, children's"
+job6,Podiatrist
+job7,Chemical engineer
+job8,Production engineer
+job9,Archaeologist
+job10,Call centre manager
+job11,Sport and exercise psychologist
+job12,Cytogeneticist
+job13,Copy
+job14,Dealer
+job15,Systems developer
+job16,Hospital doctor
+job17,"Civil engineer, contracting"
+job18,Learning mentor
+job19,Structural engineer
+job20,Clinical biochemist
+job21,Archivist
+job22,Scientific laboratory technician
+job23,"Engineer, land"
+job24,"Engineer, petroleum"
+job25,Politician's assistant
+job26,Geoscientist
+job27,"Teacher, English as a foreign language"
+job28,Careers information officer
+job29,Health service manager
+job30,"Social research officer, government"
+job31,"Scientist, research (medical)"
+job32,"Psychologist, sport and exercise"
+job33,Agricultural consultant
+job34,Clothing/textile technologist
+job35,"Accountant, chartered certified"
+job36,Purchasing manager
+job37,Landscape architect
+job38,Counselling psychologist
+job39,Secondary school teacher
+job40,Control and instrumentation engineer
+job41,Naval architect
+job42,Occupational hygienist
+job43,Audiological scientist
+job44,"Engineer, electronics"
+job45,Petroleum engineer
+job46,Research scientist (physical sciences)
+job47,Drilling engineer
+job48,Claims inspector/assessor
+job49,"Radiographer, diagnostic"
+job50,Psychiatric nurse
+job51,Diagnostic radiographer
+job52,Media buyer
+job53,Quarry manager
+job54,Illustrator
+job55,Chiropodist
+job56,Occupational psychologist
+job57,IT trainer
+job58,Gaffer
+job59,Film/video editor
+job60,Chief of Staff
+job61,Make
+job62,Barrister's clerk
+job63,Records manager
+job64,"Designer, interior/spatial"
+job65,"Exhibitions officer, museum/gallery"
+job66,"Engineer, biomedical"
+job67,Advice worker
+job68,Dance movement psychotherapist
+job69,"Engineer, civil (consulting)"
+job70,Musician
+job71,"Geologist, engineering"
+job72,Warden/ranger
+job73,"Engineer, automotive"
+job74,Seismic interpreter
+job75,Osteopath
+job76,Plant breeder/geneticist
+job77,Video editor
+job78,"Designer, textile"
+job79,Pathologist
+job80,Community pharmacist
+job81,Music tutor
+job82,Arboriculturist
+job83,Trading standards officer
+job84,Bookseller
+job85,Mudlogger
+job86,Medical sales representative
+job87,Fisheries officer
+job88,Industrial/product designer
+job89,"Psychologist, forensic"
+job90,"Teacher, special educational needs"
+job91,Insurance underwriter
+job92,"Engineer, agricultural"
+job93,"Scientist, biomedical"
+job94,Building surveyor
+job95,Information systems manager
+job96,Chartered public finance accountant
+job97,Science writer
+job98,Accounting technician
+job99,Geochemist
+job100,"Producer, radio"
+job101,Pharmacologist
+job102,"Lecturer, further education"
+job103,"Therapist, sports"
+job104,Ecologist
+job105,Heritage manager
+job106,Race relations officer
+job107,"Accountant, chartered public finance"
+job108,"Surveyor, rural practice"
+job109,Chief Marketing Officer
+job110,"Physicist, medical"
+job111,English as a foreign language teacher
+job112,Exercise physiologist
+job113,Field seismologist
+job114,Immunologist
+job115,Database administrator
+job116,"Designer, jewellery"
+job117,Product manager
+job118,"Surveyor, land/geomatics"
+job119,Broadcast presenter
+job120,"Education officer, museum"
+job121,Land/geomatics surveyor
+job122,Radio producer
+job123,Chartered loss adjuster
+job124,"Doctor, hospital"
+job125,Location manager
+job126,"Scientist, research (maths)"
+job127,Chief Operating Officer
+job128,"Copywriter, advertising"
+job129,Statistician
+job130,Medical secretary
+job131,Clinical research associate
+job132,Advertising copywriter
+job133,"Engineer, production"
+job134,Museum/gallery exhibitions officer
+job135,Chartered legal executive (England and Wales)
+job136,Trade mark attorney
+job137,"Scientist, marine"
+job138,Dispensing optician
+job139,Engineering geologist
+job140,Electrical engineer
+job141,Chartered accountant
+job142,"Engineer, technical sales"
+job143,Lexicographer
+job144,Materials engineer
+job145,Corporate investment banker
+job146,Toxicologist
+job147,"Surveyor, minerals"
+job148,Advertising account executive
+job149,Animal nutritionist
+job150,Physiological scientist
+job151,Curator
+job152,Television/film/video producer
+job153,English as a second language teacher
+job154,"Investment banker, corporate"
+job155,Teaching laboratory technician
+job156,Public relations account executive
+job157,Primary school teacher
+job158,Colour technologist
+job159,Community arts worker
+job160,Radio broadcast assistant
+job161,Glass blower/designer
+job162,Hospital pharmacist
+job163,Hotel manager
+job164,Retail banker
+job165,Theme park manager
+job166,Land
+job167,Exhibition designer
+job168,"Designer, industrial/product"
+job169,Barrister
+job170,Barista
+job171,Waste management officer
+job172,Music therapist
+job173,Leisure centre manager
+job174,"Librarian, academic"
+job175,Investment analyst
+job176,Prison officer
+job177,Psychotherapist
+job178,Human resources officer
+job179,Water engineer
+job180,Retail buyer
+job181,"Designer, furniture"
+job182,Child psychotherapist
+job183,Magazine features editor
+job184,"Engineer, mining"
+job185,Probation officer
+job186,Tourist information centre manager
+job187,Press photographer
+job188,Mechanical engineer
+job189,Mental health nurse
+job190,Pensions consultant
+job191,Private music teacher
+job192,"Engineer, civil (contracting)"
+job193,"Librarian, public"
+job194,Product/process development scientist
+job195,Animator
+job196,"Designer, multimedia"
+job197,Animal technologist
+job198,Counsellor
+job199,Chief Executive Officer
+job200,Sales executive
+job201,Cabin crew
+job202,Network engineer
+job203,Production manager
+job204,"Production assistant, radio"
+job205,Event organiser
+job206,Secretary/administrator
+job207,Energy engineer
+job208,Sub
+job209,Television floor manager
+job210,"Scientist, audiological"
+job211,Further education lecturer
+job212,Pension scheme manager
+job213,"Embryologist, clinical"
+job214,Insurance risk surveyor
+job215,"Therapist, horticultural"
+job216,"Surveyor, hydrographic"
+job217,"Engineer, control and instrumentation"
+job218,General practice doctor
+job219,"Designer, ceramics/pottery"
+job220,Museum/gallery conservator
+job221,"Research officer, trade union"
+job222,Civil Service administrator
+job223,Cartographer
+job224,"Research officer, political party"
+job225,Arts development officer
+job226,Acupuncturist
+job227,Set designer
+job228,"Geologist, wellsite"
+job229,"Therapist, music"
+job230,Phytotherapist
+job231,Ceramics designer
+job232,Emergency planning/management officer
+job233,"Nurse, mental health"
+job234,Mining engineer
+job235,Contractor
+job236,Building control surveyor
+job237,Tourism officer
+job238,Hydrographic surveyor
+job239,Armed forces training and education officer
+job240,Minerals surveyor
+job241,Equality and diversity officer
+job242,Research scientist (medical)
+job243,Historic buildings inspector/conservation officer
+job244,Freight forwarder
+job245,"Producer, television/film/video"
+job246,Research scientist (life sciences)
+job247,Wellsite geologist
+job248,Energy manager
+job249,"Editor, magazine features"
+job250,"Radiographer, therapeutic"
+job251,Television production assistant
+job252,Environmental education officer
+job253,Commissioning editor
+job254,Health and safety adviser
+job255,Outdoor activities/education manager
+job256,Multimedia programmer
+job257,Community education officer
+job258,Environmental health practitioner
+job259,Chief Financial Officer
+job260,Architect
+job261,Systems analyst
+job262,Furniture designer
+job263,Herbalist
+job264,"Programme researcher, broadcasting/film/video"
+job265,Farm manager
+job266,"Buyer, industrial"
+job267,Communications engineer
+job268,Public librarian
+job269,Interpreter
+job270,Horticultural therapist
+job271,Soil scientist
+job272,Financial trader
+job273,Learning disability nurse
+job274,Travel agency manager
+job275,Health physicist
+job276,"Teacher, early years/pre"
+job277,Art therapist
+job278,"Psychologist, counselling"
+job279,Theatre manager
+job280,Equities trader
+job281,Aid worker
+job282,"Administrator, arts"
+job283,Geophysicist/field seismologist
+job284,"Psychotherapist, child"
+job285,Special educational needs teacher
+job286,Garment/textile technologist
+job287,"Psychologist, clinical"
+job288,"Scientist, clinical (histocompatibility and immunogenetics)"
+job289,Operational researcher
+job290,Press sub
+job291,Physiotherapist
+job292,Financial adviser
+job293,Manufacturing engineer
+job294,Art gallery manager
+job295,Orthoptist
+job296,Facilities manager
+job297,Oceanographer
+job298,Paramedic
+job299,"Development worker, international aid"
+job300,Transport planner
+job301,"Doctor, general practice"
+job302,Applications developer
+job303,Administrator
+job304,TEFL teacher
+job305,Biomedical scientist
+job306,Psychiatrist
+job307,Educational psychologist
+job308,"Conservator, museum/gallery"
+job309,Chief Strategy Officer
+job310,Technical brewer
+job311,"Conservation officer, historic buildings"
+job312,Tax adviser
+job313,Patent attorney
+job314,Tree surgeon
+job315,"Scientist, physiological"
+job316,"Conservator, furniture"
+job317,Futures trader
+job318,Amenity horticulturist
+job319,Civil Service fast streamer
+job320,Charity fundraiser
+job321,"Sales professional, IT"
+job322,Airline pilot
+job323,Senior tax professional/tax inspector
+job324,Licensed conveyancer
+job325,Surgeon
+job326,Market researcher
+job327,Neurosurgeon
+job328,Camera operator
+job329,Public affairs consultant
+job330,"Engineer, manufacturing"
+job331,"Pilot, airline"
+job332,"Programmer, multimedia"
+job333,IT consultant
+job334,Immigration officer
+job335,"Editor, commissioning"
+job336,Museum education officer
+job337,Fine artist
+job338,Retail merchandiser
+job339,Education administrator
+job340,"Pharmacist, community"
+job341,Textile designer
+job342,"Surveyor, mining"
+job343,"Journalist, newspaper"
+job344,Special effects artist
+job345,Rural practice surveyor
+job346,"Pharmacist, hospital"
+job347,"Education officer, community"
+job348,"Scientist, research (physical sciences)"
+job349,Volunteer coordinator
+job350,Maintenance engineer
+job351,Management consultant
+job352,Furniture conservator/restorer
+job353,Early years teacher
+job354,Electronics engineer
+job355,Quantity surveyor
+job356,Logistics and distribution manager
+job357,Commercial/residential surveyor
+job358,Chief Technology Officer
+job359,"Chemist, analytical"
+job360,Marketing executive
+job361,"Engineer, drilling"
+job362,Commercial horticulturist
+job363,Insurance broker
+job364,Herpetologist
+job365,Environmental consultant
+job366,Firefighter
+job367,Economist
+job368,Tour manager
+job369,Health promotion specialist
+job370,Theatre director
+job371,"Editor, film/video"
+job372,"Teacher, primary school"
+job373,Regulatory affairs officer
+job374,"Designer, exhibition/display"
+job375,"Teacher, secondary school"
+job376,Sports development officer
+job377,Charity officer
+job378,Tax inspector
+job379,Police officer
+job380,"Biochemist, clinical"
+job381,"Engineer, aeronautical"
+job382,"Programmer, applications"
+job383,Clinical cytogeneticist
+job384,Water quality scientist
+job385,Public house manager
+job386,"Administrator, education"
+job387,"Engineer, maintenance"
+job388,Social researcher
+job389,Lawyer
+job390,Company secretary
+job391,Health visitor
+job392,Research scientist (maths)
+job393,Sports administrator
+job394,Aeronautical engineer
+job395,Nutritional therapist
+job396,"Engineer, broadcasting (operations)"
+job397,Associate Professor
+job398,Field trials officer
+job399,Town planner
+job400,Optometrist
+job401,Academic librarian
+job402,Site engineer
+job403,"Lecturer, higher education"
+job404,Clinical psychologist
+job405,Comptroller
+job406,Local government officer
+job407,Advertising account planner
+job408,Risk analyst
+job409,Web designer
+job410,"Investment banker, operational"
+job411,Armed forces logistics/support/administrative officer
+job412,Artist
+job413,"Administrator, local government"
+job414,Occupational therapist
+job415,Data scientist
+job416,Visual merchandiser
+job417,"Restaurant manager, fast food"
+job418,Catering manager
+job419,Operations geologist
+job420,Planning and development surveyor
+job421,"Administrator, charities/voluntary organisations"
+job422,Horticultural consultant
+job423,"Engineer, communications"
+job424,Community development worker
+job425,Manufacturing systems engineer
+job426,Higher education careers adviser
+job427,"Merchandiser, retail"
+job428,Biomedical engineer
+job429,Nature conservation officer
+job430,"Horticulturist, commercial"
+job431,Interior and spatial designer
+job432,"Therapist, drama"
+job433,Metallurgist
+job434,"Teacher, adult education"
+job435,"Loss adjuster, chartered"
+job436,"Engineer, building services"
+job437,Building services engineer
+job438,Intelligence analyst
+job439,"Optician, dispensing"
+job440,"Therapist, art"
+job441,Estate manager/land agent
+job442,Hydrologist
+job443,Medical physicist
+job444,Hydrogeologist
+job445,Training and development officer
+job446,"Presenter, broadcasting"
+job447,"Geneticist, molecular"
+job448,Air broker
+job449,Insurance claims handler
+job450,"Engineer, structural"
+job451,Fitness centre manager
+job452,Architectural technologist
+job453,Retail manager
+job454,"Designer, television/film set"
+job455,Telecommunications researcher
+job456,Jewellery designer
+job457,Environmental manager
+job458,Paediatric nurse
+job459,Oncologist
+job460,"Solicitor, Scotland"
+job461,Magazine journalist
+job462,Ambulance person
+job463,Stage manager
+job464,Writer
+job465,Analytical chemist
+job466,Medical technical officer
+job467,Media planner
+job468,Professor Emeritus
+job469,Air cabin crew
+job470,"Buyer, retail"
+job471,Television camera operator
+job472,Public relations officer
+job473,Broadcast engineer
+job474,"Production assistant, television"
+job475,"Engineer, materials"
+job476,Operational investment banker
+job477,Software engineer
+job478,"Engineer, water"
