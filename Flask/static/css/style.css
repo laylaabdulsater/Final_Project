@@ -1,8 +1,20 @@
+
+
+body {
+  background-color: rgb(96, 100, 111);
+}
+
 html {
   font-family: 'Corben', Georgia, Times, serif;
 }
+
 body {
   background-color: rgb(228, 220, 203);
+}
+
+/* Center the title */
+h1, h2, h3, h4, h5 {
+  text-align: center;
 }
 
 .row {
@@ -12,4 +24,8 @@ body {
 .well {
   text-align: center;
   align-content: center;
+}
+
+body {
+  background-color: rgb(96, 100, 111);
 }

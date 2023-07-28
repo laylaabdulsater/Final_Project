@@ -111,54 +111,45 @@ function displayPieChart(){
 }
 
 // Create Bar Chart
-function displayGenderChart(){
-let fraudPersonalURL = '/api/fraud_personal';
+function displaySecondMap(){
+let fraudPersonalURL = '/api/fraud_address';
 
   // Fetch the data from the API endpoint
   fetch(fraudPersonalURL)
     .then(response => response.json()) //Parse the repsonse to Json
     .then(apiData => {
       console.log(apiData)
-      // Parse the CSV data using Papa Parse
-      const ctx = document.getElementById('genderChart').getContext('2d');
-
-      // Extract male and female data
-      let maleCount = 0;
-      let femaleCount = 0;
-
-      apiData.forEach(row => {
-        if (row.gender === 'M') {
-          maleCount++;
-        } else if (row.gender === 'F') {
-          femaleCount++;
-        }
-      });
-      // Define the data for the bar chart
-      const data = {
-        labels: ['M', 'F'],
-        datasets: [{
-          label: 'Number of People',
-          data: [maleCount, femaleCount],
-          backgroundColor: ['blue', 'pink'],
-          borderWidth: 1
-        }]
-      };
-      // Create the bar chart
-      const genderChart = new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-              max: Math.max(maleCount, femaleCount) // Adjust the maximum value if needed
-            }
-          }
-        }
-      });
-    })
-    .catch(error => console.error('Error fetching API data:', error));
+      
+    //   // Load the map file and display it on the page
+    //  $(document).ready(function() {
+    //   var map_file = "{{ map_file }}";
+    //   var secondmap = L.map('secondmap').setView([0, 0], 2);
+    //   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    //       maxZoom: 19,
+    //   }).addTo(secondmap);
+    //   L.geoJSON(null, {
+    //       pointToLayer: function(feature, latlng) {
+    //           return L.marker(latlng);
+    //       },
+    //       onEachFeature: function(feature, layer) {
+    //           if (feature.properties && feature.properties.popupContent) {
+    //               layer.bindPopup(feature.properties.popupContent);
+    //           }
+    //       }
+    //   }).addTo(secondmap);
+    //   $.getJSON(map_file, function(data) {
+    //       L.geoJSON(data, {
+    //           onEachFeature: function(feature, layer) {
+    //               if (feature.properties && feature.properties.popupContent) {
+    //                   layer.bindPopup(feature.properties.popupContent);
+    //               }
+    //           }
+    //       }).addTo(secondmap);
+      // });
+  // });
+  })
 }
+
 
 /// Function to display the stacked bar chart
 function displayStackedBarChart() {
@@ -206,14 +197,14 @@ function displayStackedBarChart() {
       y: { grid: true },
       marks: [
         Plot.ruleY([0]),
-        Plot.lineY(stocks, { x: "fraud_date", y: "amount", stroke: "category" }),
+        Plot.lineY(stocks, { x: "Date", y: "Close", stroke: "Symbol", z: null }),
         Plot.text(
           stocks,
           Plot.selectLast({
-            x: "fraud_date",
-            y: "amount",
-            z: "category",
-            text: "category",
+            x: "Date",
+            y: "Close",
+            z: "Symbol",
+            text: "Symbol",
             textAnchor: "start",
             dx: 3
           })
@@ -223,29 +214,6 @@ function displayStackedBarChart() {
   }).catch(error => console.log("Error loading the Labeled Multi-line Chart:", error));
 }
 
-
-let timerInterval;
-Swal.fire({
-  title: 'Welcome to our Dashboard!',
-  html: 'I will autoclose in <b></b> milliseconds.',
-  timer: 4000,
-  timerProgressBar: true,
-  didOpen: () => {
-    Swal.showLoading()
-    const b = Swal.getHtmlContainer().querySelector('b')
-    timerInterval = setInterval(() => {
-      b.textContent = Swal.getTimerLeft()
-    }, 100)
-  },
-  willClose: () => {
-    clearInterval(timerInterval)
-  }
-}).then((result) => {
-  /* Read more about handling dismissals below */
-  if (result.dismiss === Swal.DismissReason.timer) {
-    console.log('I was closed by the timer')
-  }
-})
 
 // Function to handle dropdown menu selection change event
 function optionChanged(selectedOption) {
@@ -257,32 +225,32 @@ function optionChanged(selectedOption) {
     // Display Fraud Density Map
     document.getElementById("map").style.display = "block"; // Show the map
     document.getElementById("chart-container").style.display = "none"; // Hide the chart
-    document.getElementById("genderChart").style.display = "none";
+    document.getElementById("secondmap").style.display = "none";
     document.getElementById("timelineChartContainer").style.display = "none";
     displayFraudDensityMap();
   } else if (selectedOption === "option2") {
     document.getElementById("map").style.display="none"; //Hide the map
     document.getElementById("chart-container").style.display = "block"; //Show the chart
-    document.getElementById("genderChart").style.display = "none";
+    document.getElementById("secondmap").style.display = "none";
     document.getElementById("timelineChartContainer").style.display = "none";
     displayPieChart();
   } else if (selectedOption === "option3") {
     document.getElementById("map").style.display="none"; //Hide the map
     document.getElementById("chart-container").style.display = "none"; //Show the chart
-    document.getElementById("genderChart").style.display = "block";
+    document.getElementById("secondmap").style.display = "block";
     document.getElementById("timelineChartContainer").style.display = "none";
-    displayGenderChart();
+    displaySecondMap();
   } else if (selectedOption === "option4") {
     document.getElementById("map").style.display="none"; 
     document.getElementById("chart-container").style.display = "none";
-    document.getElementById("genderChart").style.display = "none";
+    document.getElementById("secondmap").style.display = "none";
     document.getElementById("timelineChartContainer").style.display = "block";
     displayStackedBarChart();
   } else {
     // Hide the map for other options
     document.getElementById("map").style.display = "none";
     document.getElementById("chart-container").style.display = "none"; 
-    document.getElementById("genderChart").style.display = "none";
-    document.getElementById("StackedBarChart").style.display = "none";
+    document.getElementById("secondmap").style.display = "none";
+    document.getElementById("timelineChartContainer").style.display = "none";
   }
 }
