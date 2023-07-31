@@ -3,9 +3,6 @@ let myMap;
 // Creating the marker cluster group
 let markers = L.markerClusterGroup();
 
-let colorScale = d3.scaleOrdinal()
-  .range(d3.schemeCategory10);
-
 // Function to initialize the map
 function initializeMap() {
   myMap = L.map("map", {
@@ -110,109 +107,13 @@ function displayPieChart(){
     }).catch(error => console.log("Error loading the Pie chart:", error));
 }
 
-// Create Bar Chart
-function displaySecondMap(){
-let fraudPersonalURL = '/api/fraud_address';
+// // Create Bar Chart
+// function displayGenderChart(){
+// let fraudPersonalURL = '/api/fraud_personal';
+//   code here
+//     .catch(error => console.error('Error fetching API data:', error));
+// }
 
-  // Fetch the data from the API endpoint
-  fetch(fraudPersonalURL)
-    .then(response => response.json()) //Parse the repsonse to Json
-    .then(apiData => {
-      console.log(apiData)
-      
-    //   // Load the map file and display it on the page
-    //  $(document).ready(function() {
-    //   var map_file = "{{ map_file }}";
-    //   var secondmap = L.map('secondmap').setView([0, 0], 2);
-    //   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    //       maxZoom: 19,
-    //   }).addTo(secondmap);
-    //   L.geoJSON(null, {
-    //       pointToLayer: function(feature, latlng) {
-    //           return L.marker(latlng);
-    //       },
-    //       onEachFeature: function(feature, layer) {
-    //           if (feature.properties && feature.properties.popupContent) {
-    //               layer.bindPopup(feature.properties.popupContent);
-    //           }
-    //       }
-    //   }).addTo(secondmap);
-    //   $.getJSON(map_file, function(data) {
-    //       L.geoJSON(data, {
-    //           onEachFeature: function(feature, layer) {
-    //               if (feature.properties && feature.properties.popupContent) {
-    //                   layer.bindPopup(feature.properties.popupContent);
-    //               }
-    //           }
-    //       }).addTo(secondmap);
-      // });
-  // });
-  })
-}
-
-
-/// Function to display the stacked bar chart
-function displayStackedBarChart() {
-  // Define the API endpoint
-  let fraudStackedURL = '/api/Fraud_Date';
-
-  // Load the data
-  d3.json(fraudStackedURL).then(function(data) {
-    console.log(data);
-    // Parse the date strings to JavaScript Date objects
-    data.forEach(d => {
-      d.fraud_date = new Date(d.fraud_date);
-      d.amount = +d.amount;
-    });
-
-    // Sort the data by date in ascending order (if it's not already sorted)
-    data.sort((a, b) => a.fraud_date - b.fraud_date);
-
-    // Extract unique categories
-    let categories = Array.from(new Set(data.map(d => d.category)));
-
-    // Format the data in a compatible format for Plot.js
-    let stocks = categories.map(category => {
-      return {
-        Symbol: category,
-        ...data.map(d => {
-          if (d.category === category) {
-            return {
-              Date: d.fraud_date,
-              Close: d.amount
-            };
-          } else {
-            return {
-              Date: d.fraud_date,
-              Close: 0 // Fill non-matching categories with 0
-            };
-          }
-        })
-      };
-    });
-
-    // Create the labeled multi-line chart
-    Plot.plot({
-      style: "overflow: visible;",
-      y: { grid: true },
-      marks: [
-        Plot.ruleY([0]),
-        Plot.lineY(stocks, { x: "Date", y: "Close", stroke: "Symbol", z: null }),
-        Plot.text(
-          stocks,
-          Plot.selectLast({
-            x: "Date",
-            y: "Close",
-            z: "Symbol",
-            text: "Symbol",
-            textAnchor: "start",
-            dx: 3
-          })
-        )
-      ]
-    });
-  }).catch(error => console.log("Error loading the Labeled Multi-line Chart:", error));
-}
 
 
 // Function to handle dropdown menu selection change event
@@ -225,32 +126,22 @@ function optionChanged(selectedOption) {
     // Display Fraud Density Map
     document.getElementById("map").style.display = "block"; // Show the map
     document.getElementById("chart-container").style.display = "none"; // Hide the chart
-    document.getElementById("secondmap").style.display = "none";
-    document.getElementById("timelineChartContainer").style.display = "none";
+    document.getElementById("genderChart").style.display = "none";
     displayFraudDensityMap();
   } else if (selectedOption === "option2") {
     document.getElementById("map").style.display="none"; //Hide the map
     document.getElementById("chart-container").style.display = "block"; //Show the chart
-    document.getElementById("secondmap").style.display = "none";
-    document.getElementById("timelineChartContainer").style.display = "none";
+    document.getElementById("genderChart").style.display = "none";
     displayPieChart();
   } else if (selectedOption === "option3") {
     document.getElementById("map").style.display="none"; //Hide the map
     document.getElementById("chart-container").style.display = "none"; //Show the chart
-    document.getElementById("secondmap").style.display = "block";
-    document.getElementById("timelineChartContainer").style.display = "none";
-    displaySecondMap();
-  } else if (selectedOption === "option4") {
-    document.getElementById("map").style.display="none"; 
-    document.getElementById("chart-container").style.display = "none";
-    document.getElementById("secondmap").style.display = "none";
-    document.getElementById("timelineChartContainer").style.display = "block";
-    displayStackedBarChart();
+    document.getElementById("genderChart").style.display = "block";
+    displayGenderChart();
   } else {
     // Hide the map for other options
     document.getElementById("map").style.display = "none";
     document.getElementById("chart-container").style.display = "none"; 
-    document.getElementById("secondmap").style.display = "none";
-    document.getElementById("timelineChartContainer").style.display = "none";
+    document.getElementById("genderChart").style.display = "none";
   }
 }

@@ -2,19 +2,14 @@
 <html lang="en">
 
 <head>
-  <title>Light Green Background</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fraud Map</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="static/css/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/MarkerCluster.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/leaflet.markercluster.js"></script>
-  <script src="https://unpkg.com/leaflet.markercluster@1.5.0/dist/leaflet.markercluster.js"></script>
   <script src="https://cdnjs.com/libraries/Chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/MarkerCluster.Default.css" />
-  <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <link rel="stylesheet" href="sweetalert2.min.css"> -->
 </head>
 
 
@@ -22,7 +17,7 @@
   <div class="row">
     <div class="col-md-12 jumbotron text-center">
       <h1>Credit Card Fraud Dashboard</h1>
-      <p><h2>Use the menu below to explore the dataset through visualizations</h2></p>
+      <p>Use the menu below to explore the dataset through visualizations</p>
     </div>
   </div>
   <div class="well">
@@ -32,28 +27,22 @@
       <option value="" disabled selected>Select an option</option>
       <option value="option1">Fraud Density Map</option>
       <option value="option2">Fraud Amount Distribution per Category</option>
-      <option value="option3">Fraud Addresses Map</option>
-      <option value="option4">Fraud in a Timeline Series Chart</option>
+      <option value="option3">Fraud Bar Chart by Gender</option>
     </select>
-    <div id="map" style="width: 1200px; height: 700px; padding-left: 510px;"></div> 
+    <div id="map" style="width: 1200px; height: 700px; padding-left: 510px;"></div>
     <div id="chart-container" style="display: none;">
-      <h1>Distribution Fraud per Category</h1></div> 
-    <div id="secondmap" style="display: none;">
-      <h1>Fraud Addresses Map</h1></div>
-    <div id="timelineChartContainer" style="display: none;">
-      <h1>Fraud in a Timeline Series Chart</h1>
+      <h1>Distribution Fraud per Category</h1>
+    <canvas id="genderChart" width="400" height="400"></canvas>
+      <div id ="chart"></div>
     </div>
   </div>
 
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/leaflet.markercluster.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script src="https://cdnjs.com/libraries/Chart.js"></script>  
-  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+  <script src="https://cdnjs.com/libraries/Chart.js"></script>
   <script src="static/js/app.js"></script>
+
 
 </body>
 
