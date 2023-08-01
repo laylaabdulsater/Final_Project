@@ -107,13 +107,45 @@ function displayPieChart(){
     }).catch(error => console.log("Error loading the Pie chart:", error));
 }
 
-// // Create Bar Chart
-// function displayGenderChart(){
-// let fraudPersonalURL = '/api/fraud_personal';
-//   code here
-//     .catch(error => console.error('Error fetching API data:', error));
-// }
+// Function to Dislay the stacked bar chart
+function displayBarChart(){
+  //Define the API endpoint
+  let fraudMultipleURL = '/api/Multiple_Fraud';
 
+  // Load the CSV data using fetch
+  fetch(MultipleFraudURL)
+  .then(response => response.json())
+  .then(apiData => {
+    // Parse the CSV data into an array of objects
+    const data = Papa.parse(csvData, { header: true }).data;
+    // Extract the "first," "last," and "count" columns
+    const firstNames = data.map(row => row.first + ' ' + row.last);
+    const counts = data.map(row => parseInt(row.count));
+    // Create the bar chart using Chart.js
+    const ctx = document.getElementById('barChart').getContext('2d');
+    const barChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: firstNames,
+        datasets: [{
+          label: 'Count',
+          data: counts,
+          backgroundColor: 'rgba(75, 192, 192, 0.6)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        },
+        responsive: false
+      }
+  });
+});
+}
 
 
 // Function to handle dropdown menu selection change event
@@ -126,22 +158,22 @@ function optionChanged(selectedOption) {
     // Display Fraud Density Map
     document.getElementById("map").style.display = "block"; // Show the map
     document.getElementById("chart-container").style.display = "none"; // Hide the chart
-    document.getElementById("genderChart").style.display = "none";
+    document.getElementById("barChart").style.display = "none";
     displayFraudDensityMap();
   } else if (selectedOption === "option2") {
     document.getElementById("map").style.display="none"; //Hide the map
     document.getElementById("chart-container").style.display = "block"; //Show the chart
-    document.getElementById("genderChart").style.display = "none";
+    document.getElementById("barChart").style.display = "none";
     displayPieChart();
   } else if (selectedOption === "option3") {
     document.getElementById("map").style.display="none"; //Hide the map
     document.getElementById("chart-container").style.display = "none"; //Show the chart
-    document.getElementById("genderChart").style.display = "block";
-    displayGenderChart();
+    document.getElementById("barChart").style.display = "block";
+    displayBarChart();
   } else {
     // Hide the map for other options
     document.getElementById("map").style.display = "none";
     document.getElementById("chart-container").style.display = "none"; 
-    document.getElementById("genderChart").style.display = "none";
+    document.getElementById("barChart").style.display = "none";
   }
 }
