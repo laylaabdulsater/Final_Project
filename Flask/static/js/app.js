@@ -110,12 +110,10 @@ function displayPieChart(){
 // Function to Dislay the stacked bar chart
 function displayBarChart(){
   //Define the API endpoint
-  let fraudMultipleURL = '/api/Multiple_Fraud';
+  let fraudMultipleURL = '/api/Multiple_fraud';
 
   // Load the CSV data using fetch
-  fetch(MultipleFraudURL)
-  .then(response => response.json())
-  .then(apiData => {
+  d3.json(fraudMultipleURL).then(function(csvData){ 
     // Parse the CSV data into an array of objects
     const data = Papa.parse(csvData, { header: true }).data;
     // Extract the "first," "last," and "count" columns
