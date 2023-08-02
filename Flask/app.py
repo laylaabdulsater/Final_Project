@@ -26,7 +26,7 @@ def api_Fraud_Merch():
     output_merchdata = category_totals.to_dict(orient="records")
     return jsonify(output_merchdata)
    
-@app.route("/api/Multiple_fraud")
+@app.route("/api/Multiple_fraud.csv")
 def api_Multiple_fraud():
     df = pd.read_csv('Multiple_fraud.csv')
     sample_df = df.sample(n=50) #sample of 50 values from the Data Frame

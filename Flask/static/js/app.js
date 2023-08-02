@@ -42,9 +42,9 @@ function displayPieChart(){
   let fraudMerchURL = '/api/Fraud_Merch';
 
   //Load the data
-  d3.json(fraudMerchURL).then(function(data){ 
+  d3.json(fraudMerchURL).then(function(piedata){ 
     //Parse the data
-    data.forEach(d=> {
+    piedata.forEach(d=> {
       d.amt= +d.amt;
     });
 
@@ -73,14 +73,14 @@ function displayPieChart(){
     
     //Generate the pie slices
     let arcs = svg.selectAll("arc")
-      .data(pie(data))
+      .data(pie(piedata))
       .enter()
       .append("g");
 
     //Add the pie slices as pie elements
     arcs.append("path")
       .attr("d", d3.arc().innerRadius(0).outerRadius(150))
-      .attr("fill", d=> colorScale(d.data.category))
+      .attr("fill", d=> colorScale(d.piedata.category))
       .attr("stroke", "white")
       .style("stroke-width", "2px");
 
@@ -113,12 +113,11 @@ function displayBarChart(){
   let fraudMultipleURL = '/api/Multiple_fraud';
 
   // Load the CSV data using fetch
-  d3.json(fraudMultipleURL).then(function(csvData){ 
-    // Parse the CSV data into an array of objects
-    const data = Papa.parse(csvData, { header: true }).data;
+  d3.json(fraudMultipleURL).then(function(csvdata) {
+    console.log(csvdata)
     // Extract the "first," "last," and "count" columns
-    const firstNames = data.map(row => row.first + ' ' + row.last);
-    const counts = data.map(row => parseInt(row.count));
+    const firstNames = csvdata.map(row => row.first + ' ' + row.last);
+    const counts = csvdata.map(row => parseInt(row.count));
     // Create the bar chart using Chart.js
     const ctx = document.getElementById('barChart').getContext('2d');
     const barChart = new Chart(ctx, {
