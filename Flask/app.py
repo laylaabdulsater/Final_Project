@@ -10,37 +10,27 @@ def index():
 
 @app.route("/api/fraud_address")
 def api_fraud_address():
-
+    
     df = pd.read_csv('Fraud_address.csv')
     output_data = df.to_dict()
     keys = output_data.keys()
     print(keys)
     return jsonify(output_data)
 
-@app.route("/api/fraud_personal")
-def api_fraud_personal():
-
-    df = pd.read_csv('Fraud_Personal.csv')
-    sample_perosnaldf = df.sample(n=10000)
-    personal_totals = sample_perosnaldf['gender']
-    output_personal = personal_totals.tolist()
-    return jsonify(output_personal)
-   
-@app.route("/api/Fraud_Merch")
+@app.route("/api/Multiple_fraud")
 def api_Fraud_Merch():
-
-    df = pd.read_csv('Fraud_Merch.csv')
-    sample_df = df.sample(n=10000) #sample of 1000 values from the Data Frame
+    df = pd.read_csv('Multiple_fraud.csv')
+    sample_df = df.sample(n=5000) #sample of 500 values from the Data Frame
     category_totals = sample_df.groupby('category')['amt'].sum().reset_index()
-    output_merchdata = category_totals.to_dict(orient="records")
-    return jsonify(output_merchdata)
-
-@app.route("/api/Fraud_Date")
-def api_Fraud_Date():
-
-    df = pd.read_csv('fraud_by_date_category.csv')
-    output_date_category = df.to_dict(orient="records")
-    return jsonify(output_date_category)
+    output_Multiplefraud = category_totals.to_dict(orient="records")
+    return jsonify(output_Multiplefraud)
+   
+@app.route("/api/Multiple_fraud")
+def api_Multiple_Fraud():
+    df = pd.read_csv('Multiple_fraud.csv')
+    sample_df = df.sample(n=500) #sample of 500 values from the Data Frame
+    output_Multiplefraud = sample_df.to_dict(orient="records")
+    return jsonify(output_Multiplefraud)
 
 if __name__ == "__main__":
     app.run()

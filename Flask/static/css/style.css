@@ -5,6 +5,12 @@ body {
   background-color: rgb(228, 220, 203);
 }
 
+/* Center the title */
+h1, h2, h3, h4, h5 {
+  text-align: center;
+}
+
+
 .row {
   text-align: center;
 }

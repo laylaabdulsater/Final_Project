@@ -3,9 +3,6 @@ let myMap;
 // Creating the marker cluster group
 let markers = L.markerClusterGroup();
 
-let colorScale = d3.scaleOrdinal()
-  .range(d3.schemeCategory10);
-
 // Function to initialize the map
 function initializeMap() {
   myMap = L.map("map", {
@@ -110,142 +107,46 @@ function displayPieChart(){
     }).catch(error => console.log("Error loading the Pie chart:", error));
 }
 
-// Create Bar Chart
-function displayGenderChart(){
-let fraudPersonalURL = '/api/fraud_personal';
+// Function to Dislay the stacked bar chart
+function displayBarChart(){
+  //Define the API endpoint
+  let fraudMultipleURL = '/api/Multiple_Fraud';
 
-  // Fetch the data from the API endpoint
-  fetch(fraudPersonalURL)
-    .then(response => response.json()) //Parse the repsonse to Json
-    .then(apiData => {
-      console.log(apiData)
-      // Parse the CSV data using Papa Parse
-      const ctx = document.getElementById('genderChart').getContext('2d');
-
-      // Extract male and female data
-      let maleCount = 0;
-      let femaleCount = 0;
-
-      apiData.forEach(row => {
-        if (row.gender === 'M') {
-          maleCount++;
-        } else if (row.gender === 'F') {
-          femaleCount++;
-        }
-      });
-      // Define the data for the bar chart
-      const data = {
-        labels: ['M', 'F'],
+  // Load the CSV data using fetch
+  fetch(MultipleFraudURL)
+  .then(response => response.json())
+  .then(apiData => {
+    // Parse the CSV data into an array of objects
+    const data = Papa.parse(csvData, { header: true }).data;
+    // Extract the "first," "last," and "count" columns
+    const firstNames = data.map(row => row.first + ' ' + row.last);
+    const counts = data.map(row => parseInt(row.count));
+    // Create the bar chart using Chart.js
+    const ctx = document.getElementById('barChart').getContext('2d');
+    const barChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: firstNames,
         datasets: [{
-          label: 'Number of People',
-          data: [maleCount, femaleCount],
-          backgroundColor: ['blue', 'pink'],
+          label: 'Count',
+          data: counts,
+          backgroundColor: 'rgba(75, 192, 192, 0.6)',
+          borderColor: 'rgba(75, 192, 192, 1)',
           borderWidth: 1
         }]
-      };
-      // Create the bar chart
-      const genderChart = new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true,
-              max: Math.max(maleCount, femaleCount) // Adjust the maximum value if needed
-            }
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
           }
-        }
-      });
-    })
-    .catch(error => console.error('Error fetching API data:', error));
+        },
+        responsive: false
+      }
+  });
+});
 }
 
-/// Function to display the stacked bar chart
-function displayStackedBarChart() {
-  // Define the API endpoint
-  let fraudStackedURL = '/api/Fraud_Date';
-
-  // Load the data
-  d3.json(fraudStackedURL).then(function(data) {
-    console.log(data);
-    // Parse the date strings to JavaScript Date objects
-    data.forEach(d => {
-      d.fraud_date = new Date(d.fraud_date);
-      d.amount = +d.amount;
-    });
-
-    // Sort the data by date in ascending order (if it's not already sorted)
-    data.sort((a, b) => a.fraud_date - b.fraud_date);
-
-    // Extract unique categories
-    let categories = Array.from(new Set(data.map(d => d.category)));
-
-    // Format the data in a compatible format for Plot.js
-    let stocks = categories.map(category => {
-      return {
-        Symbol: category,
-        ...data.map(d => {
-          if (d.category === category) {
-            return {
-              Date: d.fraud_date,
-              Close: d.amount
-            };
-          } else {
-            return {
-              Date: d.fraud_date,
-              Close: 0 // Fill non-matching categories with 0
-            };
-          }
-        })
-      };
-    });
-
-    // Create the labeled multi-line chart
-    Plot.plot({
-      style: "overflow: visible;",
-      y: { grid: true },
-      marks: [
-        Plot.ruleY([0]),
-        Plot.lineY(stocks, { x: "fraud_date", y: "amount", stroke: "category" }),
-        Plot.text(
-          stocks,
-          Plot.selectLast({
-            x: "fraud_date",
-            y: "amount",
-            z: "category",
-            text: "category",
-            textAnchor: "start",
-            dx: 3
-          })
-        )
-      ]
-    });
-  }).catch(error => console.log("Error loading the Labeled Multi-line Chart:", error));
-}
-
-
-let timerInterval;
-Swal.fire({
-  title: 'Welcome to our Dashboard!',
-  html: 'I will autoclose in <b></b> milliseconds.',
-  timer: 4000,
-  timerProgressBar: true,
-  didOpen: () => {
-    Swal.showLoading()
-    const b = Swal.getHtmlContainer().querySelector('b')
-    timerInterval = setInterval(() => {
-      b.textContent = Swal.getTimerLeft()
-    }, 100)
-  },
-  willClose: () => {
-    clearInterval(timerInterval)
-  }
-}).then((result) => {
-  /* Read more about handling dismissals below */
-  if (result.dismiss === Swal.DismissReason.timer) {
-    console.log('I was closed by the timer')
-  }
-})
 
 // Function to handle dropdown menu selection change event
 function optionChanged(selectedOption) {
@@ -257,32 +158,22 @@ function optionChanged(selectedOption) {
     // Display Fraud Density Map
     document.getElementById("map").style.display = "block"; // Show the map
     document.getElementById("chart-container").style.display = "none"; // Hide the chart
-    document.getElementById("genderChart").style.display = "none";
-    document.getElementById("timelineChartContainer").style.display = "none";
+    document.getElementById("barChart").style.display = "none";
     displayFraudDensityMap();
   } else if (selectedOption === "option2") {
     document.getElementById("map").style.display="none"; //Hide the map
     document.getElementById("chart-container").style.display = "block"; //Show the chart
-    document.getElementById("genderChart").style.display = "none";
-    document.getElementById("timelineChartContainer").style.display = "none";
+    document.getElementById("barChart").style.display = "none";
     displayPieChart();
   } else if (selectedOption === "option3") {
     document.getElementById("map").style.display="none"; //Hide the map
     document.getElementById("chart-container").style.display = "none"; //Show the chart
-    document.getElementById("genderChart").style.display = "block";
-    document.getElementById("timelineChartContainer").style.display = "none";
-    displayGenderChart();
-  } else if (selectedOption === "option4") {
-    document.getElementById("map").style.display="none"; 
-    document.getElementById("chart-container").style.display = "none";
-    document.getElementById("genderChart").style.display = "none";
-    document.getElementById("timelineChartContainer").style.display = "block";
-    displayStackedBarChart();
+    document.getElementById("barChart").style.display = "block";
+    displayBarChart();
   } else {
     // Hide the map for other options
     document.getElementById("map").style.display = "none";
     document.getElementById("chart-container").style.display = "none"; 
-    document.getElementById("genderChart").style.display = "none";
-    document.getElementById("StackedBarChart").style.display = "none";
+    document.getElementById("barChart").style.display = "none";
   }
 }
