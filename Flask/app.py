@@ -17,18 +17,19 @@ def api_fraud_address():
     print(keys)
     return jsonify(output_data)
 
-@app.route("/api/Multiple_fraud")
+@app.route("/api/Fraud_Merch")
 def api_Fraud_Merch():
-    df = pd.read_csv('Multiple_fraud.csv')
-    sample_df = df.sample(n=5000) #sample of 500 values from the Data Frame
+
+    df = pd.read_csv('Fraud_Merch.csv')
+    sample_df = df.sample(n=10000) #sample of 1000 values from the Data Frame
     category_totals = sample_df.groupby('category')['amt'].sum().reset_index()
-    output_Multiplefraud = category_totals.to_dict(orient="records")
-    return jsonify(output_Multiplefraud)
+    output_merchdata = category_totals.to_dict(orient="records")
+    return jsonify(output_merchdata)
    
 @app.route("/api/Multiple_fraud")
 def api_Multiple_Fraud():
     df = pd.read_csv('Multiple_fraud.csv')
-    sample_df = df.sample(n=500) #sample of 500 values from the Data Frame
+    sample_df = df.sample(n=5000) #sample of 500 values from the Data Frame
     output_Multiplefraud = sample_df.to_dict(orient="records")
     return jsonify(output_Multiplefraud)
 
