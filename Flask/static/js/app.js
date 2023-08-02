@@ -55,7 +55,7 @@ function displayPieChart(){
 
     //Specify the colors for the pie slices
     let colorScale = d3.scaleOrdinal()
-      .domain(data.map(d=>d.category))
+      .domain(piedata.map(d=>d.category))
       .range(d3.schemeCategory10);
 
     //Select the char container element
