@@ -44,11 +44,11 @@ iv. Since y_train value is highly imbalanced and discrete, we used SMOTE(Synthes
 ![](images/SMOTE.jpg)
 v. Normalization of testing and training sets
 vi. Run the models:
-*	Model 1: Logistic Regression
-*	Model 2: Decision Tree
-*	Model 3: Random Forest
-*	Model 4: Gradient Boosting
-*	Model 5: Neural Network
+  * Model 1: Logistic Regression
+  * Model 2: Decision Tree
+  * Model 3: Random Forest
+  * Model 4: Gradient Boosting
+  * Model 5: Neural Network
 * For each model the datasets (training and testing) were
 * Fit, trained into the model, predicted, created confusion matrix, and finally calculated the accuracy score.
 vii.	Accuracy comparison of the models
