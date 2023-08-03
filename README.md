@@ -49,8 +49,7 @@ vi. Run the models:
   * Model 3: Random Forest
   * Model 4: Gradient Boosting
   * Model 5: Neural Network
-* For each model the datasets (training and testing) were
-* Fit, trained into the model, predicted, created confusion matrix, and finally calculated the accuracy score.
+* For each model the datasets (training and testing) were fit, trained into the model, predicted, created confusion matrix, and finally calculated the accuracy score.
 vii.	Accuracy comparison of the models
 * The test and train accuracy score of each model is compared
 ![](images/accuracy_comparison.jpg)
