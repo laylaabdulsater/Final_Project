@@ -4,6 +4,7 @@
 
 # 1. Introduction:
 Credit card fraud is a significant concern for financial institutions and individuals alike. It can result in substantial financial losses and damage to the reputation of both the cardholders and the issuing banks. To address this issue, the application of machine learning techniques has gained significant attention. This project is an extension of Project 3 (Credit Card Fraud Visualization) and aims to develop a credit card fraud analysis system using machine learning tools and techniques to detect and prevent fraudulent transactions effectively.
+
 # 2. Objectives:
 The primary objectives of this project are as follows:
 1.  To develop an interactive web application that showcases the analytical studies and visualization of credit card frauds for the sourced dataset.
@@ -49,8 +50,7 @@ vi. Run the models:
   * Model 3: Random Forest
   * Model 4: Gradient Boosting
   * Model 5: Neural Network
-* For each model the datasets (training and testing) were
-* Fit, trained into the model, predicted, created confusion matrix, and finally calculated the accuracy score.
+* For each model the datasets (training and testing) were fit, trained into the model, predicted, created confusion matrix, and finally calculated the accuracy score.
 vii.	Accuracy comparison of the models
 * The test and train accuracy score of each model is compared
 ![](images/accuracy_comparison.jpg)
