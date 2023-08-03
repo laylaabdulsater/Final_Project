@@ -28,6 +28,7 @@ def api_Fraud_Merch():
    
 @app.route("/api/Multiple_fraud")
 def api_Multiple_fraud():
+    
     df = pd.read_csv('Multiple_fraud.csv')
     sample_df = df.sample(n=50) #sample of 50 values from the Data Frame
     output_Multiplefraud = sample_df.to_dict(orient="records")

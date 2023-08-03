@@ -119,13 +119,18 @@ function displayBarChart(){
     const firstNames = data.map(row => row.first + ' ' + row.last);
     const counts = data.map(row => parseInt(row.count));
     // Create the bar chart using Chart.js
-    const ctx = document.getElementById('barChart').getContext('2d');
-    const barChart = new Chart(ctx, {
+    document.addEventListener ('DOMContentLoaded', function() {
+    fetchData().then(data => {
+    initBarChart(data);
+    });
+    });
+    const ctx = document.getElementById('myChart');
+    new Chart(ctx, {
       type: 'bar',
       data: {
         labels: firstNames,
         datasets: [{
-          label: 'Count',
+          label: 'Count of Multiple Fraud',
           data: counts,
           backgroundColor: 'rgba(75, 192, 192, 0.6)',
           borderColor: 'rgba(75, 192, 192, 1)',
@@ -133,12 +138,12 @@ function displayBarChart(){
         }]
       },
       options: {
+        responsive: false,
         scales: {
           y: {
             beginAtZero: true
           }
-        },
-        responsive: false
+        }
       }
   });
 });
