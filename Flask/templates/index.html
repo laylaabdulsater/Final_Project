@@ -34,29 +34,14 @@
     </div>
     <div id="barChart" style="width:400;height:400" >
       <h1>Multiple Fraud barChart</h1> 
+      <canvas id="myChart"></canvas>
     </div>
-  <div>
-    <canvas id="myChart"></canvas>
-  </div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/leaflet.markercluster.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <script>
-    function parseCSV(csvData) {
-      Papa.parse(csvData, {
-        delimiter: ',',
-        header: true,
-        skipEmptyLines: true,
-        complete: function(results) {
-          console.log(results.data); // Output parsed data as an array of objects
-        },
-        error: function(error) {
-          console.error('Error parsing CSV:', error);
-        }
-      });
-    }
-  </script>
+ 
   <script src="static/js/app.js"></script>
 
 

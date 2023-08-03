@@ -116,14 +116,15 @@ function displayBarChart(){
   d3.json(fraudMultipleURL).then(function(data) {
     console.log(data)
     // Extract the "first," "last," and "count" columns
-    const firstNames = data.map(row => row.first + ' ' + row.last);
-    const counts = data.map(row => parseInt(row.count));
+    var firstNames = data.map(row => row.first + ' ' + row.last);
+    var counts = data.map(row => parseInt(row.count));
     // Create the bar chart using Chart.js
-    document.addEventListener ('DOMContentLoaded', function() {
-    fetchData().then(data => {
-    initBarChart(data);
-    });
-    });
+    // document.addEventListener ('DOMContentLoaded', function() {
+    // fetchData().then(data => {
+    // initBarChart(data);
+    // });
+    // });
+
     const ctx = document.getElementById('myChart');
     new Chart(ctx, {
       type: 'bar',
