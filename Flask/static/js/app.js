@@ -49,7 +49,7 @@ function displayPieChart(){
 
     // Append the chart to the chart container
     let svg = chartContainer.append("svg")
-        .attr("width", 500)
+        .attr("width", 900)
         .attr("height", 400)
 
     var width = svg.attr("width"),
@@ -60,9 +60,10 @@ function displayPieChart(){
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
 // Step 4
-var ordScale = d3.scaleOrdinal()
-               .domain(data)
-               .range(['#ffd384','#94ebcd','#fbaccc','#d3e0ea','#fa7f72']);
+var colorScale = d3.scaleOrdinal()
+               .domain(data.map(d => d.category))
+               .range(['#ffd384', '#94ebcd', '#fbaccc', '#d3e0ea', '#fa7f72', '#b3e8ef', '#fcd5b5', '#e7c7f3', '#a3e2bd', '#fbb1b9', '#f4c2c2', '#d0e1f9', '#f6d9aa', '#80deea', '#ffb74d', '#ce93d8', '#aed581', '#ff8a65', '#81d4fa', '#fff176']);
+
 
 // Step 5
 var pie = d3.pie().value(function(d) { 
@@ -80,20 +81,30 @@ var path = d3.arc()
 
 arc.append("path")
 .attr("d", path)
-.attr("fill", function(d) { return ordScale(d.data.category); });
+.attr("fill", function(d) { return colorScale(d.data.category); });
 
-// Step 7
-var label = d3.arc()
-           .outerRadius(radius)
-           .innerRadius(0);
- 
-arc.append("text")
-.attr("transform", function(d) { 
-         return "translate(" + label.centroid(d) + ")"; 
- })
-.text(function(d) { return d.data.category; })
-.style("font-family", "arial")
-.style("font-size", 15);
+
+var legend = svg.append("g")
+  .attr("transform", "translate(" + (width - 200) + ", 20)");
+
+var legendItems = legend.selectAll(".legend-item")
+  .data(data)
+  .enter()
+  .append("g")
+  .attr("class", "legend-item")
+  .attr("transform", (d, i) => "translate(0," + (i * 20) + ")");
+
+legendItems.append("rect")
+  .attr("x", 0)
+  .attr("width", 10)
+  .attr("height", 10)
+  .attr("fill", d => colorScale(d.category));
+
+legendItems.append("text")
+  .attr("x", 15)
+  .attr("y", 9)
+  .attr("dy", "0.35em")
+  .text(d => d.category);
 
     }).catch(error => console.log("Error loading the Pie chart:", error));
 }
