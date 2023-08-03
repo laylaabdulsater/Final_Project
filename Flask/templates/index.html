@@ -15,10 +15,11 @@
 <body>
   <div class="row">
     <div class="col-md-12 jumbotron text-center">
-      <h1>Credit Card Fraud Dashboard</h1>
+      <h1>Credit Card Fraud Dashboard</h1>  
       <p>Use the menu below to explore the dataset through visualizations</p>
     </div>
   </div>
+
   <div class="well">
     <h5>Dropdown Menu:</h5>
 
@@ -29,22 +30,24 @@
       <option value="option3">Multiple Fraud Bar Chart</option>
     </select>
     <div id="map" style="width: 1200px; height: 700px; padding-left: 510px;"></div>
-    <div id="chart-container" style="display: none;">
+    <div id="pieChart" style="display: none;">
       <h1>Distribution Fraud per Category</h1>
+      <svg width = "500" height="400"></svg>
     </div>
     <div id="barChart" style="width:400;height:400" >
-      <h1>Multiple Fraud barChart</h1> 
-      <canvas id="myChart"></canvas>
+      <h1>Multiple Fraud Bar Chart</h1> 
+      <canvas id="myBarChart"></canvas>
     </div>
 </div>
+
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.5.1/leaflet.markercluster.js"></script>
   <script src="https://d3js.org/d3.v7.min.js"></script>
- 
+
+
   <script src="static/js/app.js"></script>
 
-
 </body>
-
 </html>
