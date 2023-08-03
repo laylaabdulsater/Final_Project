@@ -6,11 +6,14 @@
 Credit card fraud is a significant concern for financial institutions and individuals alike. It can result in substantial financial losses and damage to the reputation of both the cardholders and the issuing banks. To address this issue, the application of machine learning techniques has gained significant attention. This project is an extension of Project 3 (Credit Card Fraud Visualization) and aims to develop a credit card fraud analysis system using machine learning tools and techniques to detect and prevent fraudulent transactions effectively.
 # 2. Objectives:
 The primary objectives of this project are as follows:
-1. ETL
-2. Web scrapping
-3. The flask app from Project 3 will be used to develop the web application on credit card fraud interactive visualizations.
-4. Develop a credit card fraud detection model using machine learning algorithms.
-5. Evaluate the performance of the developed model and compare it with existing fraud detection methods.
+1.  To develop an interactive web application that showcases the analytical studies and visualization of credit card frauds for the sourced dataset.
+2.	To study, compare and develop the most accurate supervised machine learning algorithm/model to detect fraudulent transactions.
+
+# 3. Tools and Techniques used:
+ * Languages: Python, JavaScript, HTML.
+ * Libraries: Pandas, Numpy, Beautiful Soup, Splinter, Matplotlib, Scikit-Learn.
+  * Tools: Jupyter Notebook, V S Code, GoogleCo Lab.
+
 
 # 3. Methodology:
 The project will follow the following methodology:
